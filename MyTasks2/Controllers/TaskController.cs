@@ -132,5 +132,22 @@ namespace MyTasks2.Controllers
         }
 
 
+        /*public IActionResult Category(int id = 0)
+        {
+            var userId = User.GetUserId();
+
+            var category = id == 0 ?
+                new Category { Id = 0, Name = "ef"} :
+                _taskService.GetCategories();
+
+            var vm = new CategoryViewModel
+            {
+                Category = category,
+                Heading = id == 0 ?
+                    "Dodawanie nowej kategorii" : "Edytowanie kategorii"
+            };
+
+            return View(vm);
+        }*/
     }
 }

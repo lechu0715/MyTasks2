@@ -17,5 +17,7 @@ namespace MyTasks2.Persistence
 
         public DbSet<Task> Tasks { get; set; }
         public DbSet<Category> Categories { get; set; }
+
+        
     }
 }

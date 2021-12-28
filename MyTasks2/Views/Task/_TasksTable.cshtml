@@ -25,7 +25,13 @@
                             </a>
                         </td>
                         <td>@task.Description</td>
-                        <td>@task.Category.Name</td>
+                        <td>
+                            <a href="@Url.Action("Category", "Task",
+                                    new { id = task.CategoryId })"
+                               class="font-weight-bold">
+                                @task.Category.Name
+                            </a>
+                        </td>
                         <td>@task.Term?.ToString("dd-MM-yyyy")</td>
                         <td>
                             @if (!task.IsExecuted)

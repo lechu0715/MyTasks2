@@ -28,6 +28,8 @@ namespace MyTasks2.Core.Models.Domains
 
         [Display(Name = "Zrealizowane")]
         public bool IsExecuted { get; set; }
+
+
         public string UserId { get; set; }
 
 

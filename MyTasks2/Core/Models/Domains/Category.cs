@@ -19,7 +19,11 @@ namespace MyTasks2.Core.Models.Domains
         [Required]
         public string Name { get; set; }
 
+        [Required]
+        public string UserId { get; set; }
+
 
         public ICollection<Task> Tasks { get; set; }
+        public ApplicationUser User { get; set; }
     }
 }
